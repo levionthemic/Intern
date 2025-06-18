@@ -1,0 +1,217 @@
+/* Commons */
+button {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 20%;
+  height: 90px;
+  background: var(--bg-color);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 1.2rem;
+}
+.header .menu {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 60px;
+  margin-top: 10px;
+}
+.header .menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header .menu ul li {
+  text-align: center;
+  padding: 15px;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header .menu ul li:not(:last-child):hover {
+  text-decoration: underline;
+}
+
+.header .menu ul li:last-child {
+  background: var(--bg-color);
+}
+
+/* Section 1 */
+.inner-section1 {
+  background-image: url("assets/banner.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 200px);
+}
+
+.inner-section1 .inner-wrap {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 100px;
+  height: 100%;
+}
+
+.inner-section1 .inner-wrap .inner-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inner-section1 .inner-wrap .inner-content h1 {
+  font-size: 5rem;
+}
+
+.inner-section1 .inner-wrap .inner-content p {
+  font-size: 1.2rem;
+}
+
+.inner-section1 .inner-wrap .inner-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.inner-section1 .inner-wrap .inner-buttons button {
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.inner-section1 .inner-wrap .inner-buttons button:first-child {
+  background-color: var(--bg-color-1);
+}
+
+.inner-section1 .inner-wrap .inner-buttons button:last-child {
+  background-color: var(--bg-color-2);
+}
+/* Section 2 */
+.inner-section2 .inner-wrap {
+  background-color: var(--bg-color);
+  padding: 30px 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.inner-section2 .inner-wrap .inner-vs-teams {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.inner-section2 .inner-wrap .inner-vs-teams .inner-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.inner-section2 .inner-wrap .inner-vs-teams .inner-team img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.inner-section2 .inner-wrap .inner-vs-teams .inner-team span {
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+
+.inner-section2 .inner-wrap .inner-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.inner-section2 .inner-wrap .inner-info .inner-info-game {
+  color: grey;
+}
+
+.inner-section2 .inner-wrap .inner-info .inner-info-game p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.inner-section2 .inner-wrap .inner-info .inner-countdown {
+  display: flex;
+  align-items: center;
+}
+
+.inner-section2 .inner-wrap .inner-info .inner-countdown .inner-countdown-item {
+  padding: 10px 40px 2px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inner-section2
+  .inner-wrap
+  .inner-info
+  .inner-countdown
+  .inner-countdown-item
+  span:first-child {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.inner-section2
+  .inner-wrap
+  .inner-info
+  .inner-countdown
+  .inner-countdown-item:not(:last-child) {
+  border-right: 0.1px solid #ddd;
+}
+
+.inner-section2 .inner-wrap .inner-button button {
+  background: var(--bg-color-2);
+  border-radius: 2px;
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
