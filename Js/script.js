@@ -18,5 +18,12 @@ buttons.forEach((button) => {
 });
 
 equalButton.addEventListener("click", () => {
-  inputDisplay.value = eval(inputDisplay.value);
+  try {
+    inputDisplay.value = eval(inputDisplay.value);
+    if (inputDisplay.value === 'Infinity')
+      throw new Error('Divided by 0!')
+  } catch (error) {
+    alert(error)
+    inputDisplay.value = 0
+  }
 });
